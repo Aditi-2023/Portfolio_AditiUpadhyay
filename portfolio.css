@@ -7,10 +7,11 @@ img {
     max-width: 100%;
     height: auto;
   }
-/*#myVideo {
+
+#myVideo {
     max-width: 100%;
     min-height: 100%;
-  }*/
+  }
 
 #myBtn {
     /*display: none;*/
@@ -342,11 +343,10 @@ button {
     justify-content: space-around;
 }
 
-.contactme {
-    width: 50%;
-    margin: 80px;
+/*.contactme {
     margin-top: -70px;
-}
+    width: 50%;   
+}*/
 
 .inst {
     margin: 82px;
@@ -449,6 +449,7 @@ figcaption {
 
 .contactme {
     width: 70%;
+    margin: 80px;
     margin-top: 10px;
     margin-left: -100px;
 }
@@ -505,7 +506,10 @@ figcaption {
     color: blue;
 }
 
-@media screen and (max-width: 450px) {
+
+
+
+@media screen and (max-width: 850px) {
 
     .left {
         font-size: 20px;
@@ -540,6 +544,72 @@ figcaption {
         /*#265e58;*/
         color: white;
         height: 70px;
+    }
+
+    .contactboxes {
+        flex-direction: column;
+    }
+
+    .edubox {
+        flex-direction: column-reverse;
+    }
+
+    .contactme {
+        display: flex;
+        justify-content: center;
+        margin: 80px;
+        margin-top: 10px;
+        
+    }
+
+    input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    outline: none;
+    background: transparent;
+    display: inline-block;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    resize: vertical;
+}
+
+    /*table,
+    tr,
+    td img {
+        width: 120%;
+    }
+
+    table {
+        margin-top: 50px;
+        border-spacing: 10px;
+        border-collapse: collapse;
+        text-align: center;
+    }*/
+
+    .linked {
+        align-items: center;
+        margin-top: 30px;
+        /*font-size: 20px;
+        margin: 80px;*/
+    }
+
+    .btnsub {
+        border: 2px solid #00154f;
+        width: 50%;
+        color: #00154f;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: white;
+        border-radius: 50px;
+        margin-top: 20px;
+        padding: 10px;
+        /*padding-bottom: 13px;
+        /*background-color: #55d5c961;*/
     }
 }
 
