@@ -6,12 +6,12 @@
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 #myVideo {
     max-width: 100%;
     min-height: 100%;
-  }
+}
 
 #myBtn {
     /*display: none;*/
@@ -73,11 +73,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration-thickness: 2px;    
+    text-decoration-thickness: 2px;
     /*text-shadow: 2px 2px 1px;*/
     padding-bottom: px;
     border-bottom-style: solid;
-    border-bottom-width: 2px;    
+    border-bottom-width: 2px;
     width: fit-content;
 }
 
@@ -294,7 +294,9 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: /*rgb(134, 124, 67)*/ #000a25;
+    background-color:
+        /*rgb(134, 124, 67)*/
+        #000a25;
     color: white;
     height: 118px;
     font-size: 15px;
@@ -403,7 +405,7 @@ label {
     /*background-color: #55d5c961;*/
 }
 
-.btnsub:active{
+.btnsub:active {
     background-color: #00154f;
     color: white;
 }
@@ -497,9 +499,9 @@ figcaption {
     margin-bottom: 20px;
 }
 
-.location {
+/*.location {
     margin-left: 50px;
-}
+}*/
 
 
 .fa-brands .fa-twitter:hover {
@@ -510,6 +512,36 @@ figcaption {
 
 
 @media screen and (max-width: 850px) {
+
+    #myBtn {
+        /*display: none;*/
+        width: 3%;
+        height: 4%;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        margin-top: 10px;
+        z-index: 99;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding-top: 10px;
+        padding: 5px;
+        border-radius: 30%;
+    }
+
+    .heading {
+        /*display: flex;
+        justify-content: center;*/
+        text-align: center;
+        font-size: 30px;
+        color: black;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 
     .left {
         font-size: 20px;
@@ -536,6 +568,7 @@ figcaption {
     }
 
     nav {
+        margin-top: -20px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -557,46 +590,49 @@ figcaption {
     .contactme {
         display: flex;
         justify-content: center;
-        margin: 80px;
-        margin-top: 10px;
-        
+        margin: 30px;
+        margin-top: 40px;
+
     }
 
     input[type=text],
-input[type=email],
-select,
-textarea {
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px 20px;
-    outline: none;
-    background: transparent;
-    display: inline-block;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 18px;
-    resize: vertical;
-}
-
-    /*table,
-    tr,
-    td img {
-        width: 120%;
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 5px;
+        /*padding: 10px 20px;*/
+        outline: none;
+        background: transparent;
+        display: inline-block;
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 18px;
+        resize: vertical;
     }
 
-    table {
-        margin-top: 50px;
-        border-spacing: 10px;
-        border-collapse: collapse;
-        text-align: center;
-    }*/
+
 
     .linked {
-        align-items: center;
-        margin-top: 30px;
+        /*display: flex;
+        justify-content: center;
+        margin-top: 30px;*/
         /*font-size: 20px;
         margin: 80px;*/
+        margin-top: 20px;
+        margin-left: 0;
     }
+
+    /*.linked {
+        display: flex;
+        justify-content: space-around;
+        
+        margin-top: 30px;
+        margin-left: 200px;
+        align-items: center;
+        font-size: 20px;
+        margin: 80px;
+    }*/
 
     .btnsub {
         border: 2px solid #00154f;
@@ -611,31 +647,45 @@ textarea {
         /*padding-bottom: 13px;
         /*background-color: #55d5c961;*/
     }
+
+    /*table,
+    tr,
+    td img {
+        width: 120%;
+    }
+
+    table {
+        margin-top: 50px;
+        border-spacing: 10px;
+        border-collapse: collapse;
+        text-align: center;
+    }*/
 }
 
 .chip {
     margin-left: 50px;
+    align-items: center;
     margin-top: 20px;
     display: inline-block;
     padding: 0 20px;
     text-align: center;
     vertical-align: center;
     height: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
     line-height: 35px;
     /*background-color: #f1f1f1;  #07565c*/
-    border-radius: 25px;    
+    border-radius: 25px;
     font-size: 20px;
     background-color: #31959c;
     color: white;
     box-shadow: 2px 2px 10px grey;
-  }
-  
-  .chip img {
+}
+
+.chip img {
     float: left;
     margin: 0 10px 0 -25px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-  }
+}
