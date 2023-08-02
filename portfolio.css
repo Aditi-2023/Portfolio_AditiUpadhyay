@@ -43,7 +43,7 @@ body {
 
 .header {
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 nav {
@@ -75,7 +75,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration-thickness: 2px;
     /*text-shadow: 2px 2px 1px;*/
-    padding-bottom: px;
+    padding-bottom: 5px;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     width: fit-content;
@@ -89,6 +89,37 @@ nav ul li a:hover {
 .right {
     font-size: 18px;
     /*margin-right: -200px;*/
+}
+
+#mag{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+#mag::-webkit-color-swatch{
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+#mag::-moz-color-swatch{
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.magic2 label{
+    
+    /*display: inline-block;
+    justify-content: center;
+    text-align: center;*/
+    margin-top: 20px;
+    font-size: 22px;
 }
 
 .firstsection {
@@ -126,10 +157,10 @@ nav ul li a:hover {
     max-width: 85vw;
 }
 
-.secondbox {
-    /*background-color: #55d5c961;
-    padding: 30px;*/
-}
+/*.secondbox {
+    background-color: #55d5c961;
+    padding: 30px;
+}*/
 
 .thirdsection {
     margin: auto;
@@ -270,6 +301,10 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
+/*#pointer{
+    font-weight: bold;
+}*/
+
 .cgpc {
     font-size: 23px;
     margin-top: 30px;
@@ -293,12 +328,19 @@ nav ul li a:hover {
     /*padding: 30px;*/
 }
 
+.pryshth {
+    font-size: 23px;
+    margin-top: 25px;
+    border-radius: 100px;
+    /*padding: 30px;*/
+}
+
 footer {
     background-color:
         /*rgb(134, 124, 67)*/
         #000a25;
     color: white;
-    height: 118px;
+    height: 135px;
     font-size: 15px;
     margin-top: 20px;
 
@@ -306,13 +348,6 @@ footer {
 
 .footer {
     padding: 25px 20px;
-}
-
-#stars {
-    position: absolute;
-    left: 30px;
-    /*50px*/
-    font-size: 40px;
 }
 
 button {
@@ -333,11 +368,13 @@ button {
     padding: 7px;
     color: black;
     margin-top: 10px;
+    background-color: transparent;
 }
 
 .btn1:hover {
-    background-color: #84a5ff;
-    /*background-color: rgb(43, 226, 186);*/
+    background-color: rgba(0, 136, 72, 0.801);
+    color: white;
+    /*background-color: rgb(43, 226, 186); 84a5ff*/
 }
 
 .contactboxes {
@@ -358,6 +395,11 @@ button {
 /*.contact {
     background-color: #9595df;
 }*/
+
+input[type=color]
+{
+    text-align: center;
+}
 
 input[type=text],
 input[type=email],
@@ -410,7 +452,19 @@ label {
     color: white;
 }
 
-/*.btnsub:hover {
+#skillimg{
+    width: 60%;
+    /*margin-left: -1000px;*/
+}
+
+/*.fa-solid:hover{
+    color: white;
+}
+
+#skillimg:hover{
+    margin-left: 0;
+}
+.btnsub:hover {
     background-color: #00154f;
     color: white;
 }*/
@@ -425,13 +479,13 @@ label {
 
 /*.skillset{
     display: inline;
-}*/
+}
 
 table,
 tr,
 td img {
     width: 60%;
-}
+}*/
 
 table {
     margin-top: 50px;
@@ -446,6 +500,7 @@ td {
 }
 
 figcaption {
+    margin-top: 10px;
     font-size: 20px;
 }
 
@@ -510,19 +565,41 @@ figcaption {
 
 
 
+@media screen and (max-width: 450px) {
+    .right {
+        font-size: 10px;
+        margin-bottom: 10px;
+        /*margin-right: -200px;*/
+    }
+
+
+}
+
 
 @media screen and (max-width: 850px) {
+
+    .rightsection {
+        /* text-align: center;
+        margin-left:150px;
+        display: flex;
+        justify-content: center;*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
 
     #myBtn {
         /*display: none;*/
         width: 3%;
-        height: 4%;
+        height: 5.5%;
         position: fixed;
         bottom: 10px;
-        right: 20px;
+        right: 10px;
         margin-top: 10px;
         z-index: 99;
-        font-size: 15px;
+        font-size: 12px;
         border: none;
         outline: none;
         background-color: black;
@@ -531,6 +608,45 @@ figcaption {
         padding-top: 10px;
         padding: 5px;
         border-radius: 30%;
+    }
+
+    .basic {
+        font-size: 15px;
+    }
+
+    .edubox {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .edubox1 {
+        background-color: white;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px grey;
+        margin: 10px 2px;
+        /*width: 80%;*/
+    }
+
+    .edubox2 {
+        background-color: white;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px 2px;
+        box-shadow: 2px 2px 5px grey;
+    }
+
+    .edubox3 {
+        /*margin-top: 20px;
+        margin-left: 50px;
+        width: 37%;*/
+        background-color: white;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px grey;
+        margin: 10px 2px;
     }
 
     .heading {
@@ -564,6 +680,8 @@ figcaption {
     }
 
     .firstsection {
+        margin-top: -20px;
+        text-align: center;
         flex-direction: column-reverse;
     }
 
@@ -577,6 +695,10 @@ figcaption {
         /*#265e58;*/
         color: white;
         height: 70px;
+    }
+
+    #element{
+        text-align: left;
     }
 
     .contactboxes {
@@ -611,6 +733,57 @@ figcaption {
         resize: vertical;
     }
 
+    table {
+        margin-top: 30px;
+        border-spacing: 20px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    td {
+        padding: 5px;
+        margin: 10px 10px;
+    }
+
+    figcaption {
+        font-size: 15x;
+    }
+
+    #pointer {
+        font-weight: bold;
+    }
+
+    .cgpc {
+        font-size: 18px;
+        margin-top: 30px;
+        /*background-color: whitesmoke;
+        border-radius: 100px;
+        padding: 30px;*/
+    }
+
+    .noor {
+        font-size: 18px;
+        margin-top: 25px;
+        /*background-color: whitesmoke;
+        border-radius: 100px;
+        padding: 30px;*/
+    }
+
+    .marpu {
+        font-size: 18px;
+        margin-top: 25px;
+
+        /*border-radius: 100px;
+        padding: 30px;*/
+    }
+
+    .pryshth {
+        font-size: 18px;
+        margin-top: 25px;
+
+        /*padding: 30px;
+         border-radius: 100px;*/
+    }
 
 
     .linked {
@@ -663,7 +836,7 @@ figcaption {
 }
 
 .chip {
-    margin-left: 50px;
+
     align-items: center;
     margin-top: 20px;
     display: inline-block;
@@ -673,8 +846,9 @@ figcaption {
     height: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
-    line-height: 35px;
-    /*background-color: #f1f1f1;  #07565c*/
+    line-height: 37px;
+    /*background-color: #f1f1f1;  #07565c
+    margin-left: 50px;*/
     border-radius: 25px;
     font-size: 20px;
     background-color: #31959c;
