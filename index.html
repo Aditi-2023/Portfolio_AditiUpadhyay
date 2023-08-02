@@ -11,9 +11,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
 
+    <script src="portfolio.js"></script>
+
     <script src="https://kit.fontawesome.com/98fc543cb7.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        let color=document.getElementById('mag');
+        color.addEventListener('input', function(e)
+        {
+            alert(this.value);
+        })
+        document.body.style.backgroundColor=color1;
         function myFunction() {
             /*alert("Your message has been sent!!");
             document.getElementById("myForm").reset();*/
@@ -28,13 +36,13 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <button onclick="topFunction()" id="myBtn" title="Go back to top">
         <!--<i class="fa-solid fa-arrow-up"></i>--><i class="fa-solid fa-angles-up"></i>
     </button>
     <video autoplay loop style="width: 100%;" id="myVideo">
         <source src="vid.mp4" type="video/mp4">
     </video>
-    <img src="bgg6.png" alt="" style="margin-top: -6px; width: 100%; height: 90%;">
+    <img src="bgg12.png" alt="" style="margin-top: -6px; width: 100%; height: 90%;">
     <header class="header">
         <nav>
             <div class="left">
@@ -51,9 +59,9 @@
                     <li>
                         <a href="#skillsinfo">Skills</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#projectsinfo">Projects</a>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="#experienceinfo">Experience</a>
                     </li>
@@ -70,16 +78,33 @@
     </header>
 
     <main>
-        <div id="aboutinfo" style="height: 20px;"></div>
-        <section class="firstsection">
-            <!--<p style="background-image: url('bg.jpg');"></p>-->
-            <div class="leftsection">
-                <p style="font-size: 30px;">Welcome to my Portfolio!</p>
-                <p>
-                    Hi, My name is Aditi Upadhyay.
-                <p>An aspiring student looking forward to developing my skills.</p>
-                </p>
-                <!--<div style="font-size: 25px; font-size: 30px;"> Hi, My name is <span class="green">
+        <div id="aboutinfo" style="height: 60px;"></div>
+        <section class="firstsection1">
+            <div class="magic2" align="center">
+                <form action="portfolio.php">
+                    <label for="">Want to do something interesting? Choose a color!</label>
+                    <br>
+                    <input type="color" value="#BE5CFF" id="mag">
+                    <button type="submit">Go!!</button>
+                    <!--<input type="submit">Go !!-->
+                </form>
+            </div>
+            <!--<div class="magic" style="text-align: center;">
+                <div class="magic2">
+                    <p>Want to do something interesting? Choose a color!</p>
+                    <label for="">Want to do something interesting? Choose a color!</label>
+                    <input type="color" value="#BE5CFF" id="mag" >
+                </div>
+            </div>-->
+            <div class="firstsection">
+                <!--<p style="background-image: url('bg.jpg');"></p>-->
+                <div class="leftsection">
+                    <p style="font-size: 30px;">Welcome to my Portfolio!</p>
+                    <p>
+                        Hi, My name is Aditi Upadhyay.
+                    <p>An aspiring student looking forward to developing my skills.</p>
+                    </p>
+                    <!--<div style="font-size: 25px; font-size: 30px;"> Hi, My name is <span class="green">
                         Aditi Upadhyay
                     </span> </div>
                 <div>and I am a</div>
@@ -87,9 +112,10 @@
                     <br>-->
 
 
-            </div>
-            <div class="rightsection">
-                <img src="img.png" alt="">
+                </div>
+                <div class="rightsection">
+                    <img src="img.png" alt="">
+                </div>
             </div>
         </section>
 
@@ -173,18 +199,19 @@
         <section class="skills">
             <div class="heading">Skills</div>
             <div class="skillset" align="center">
-                <table style="width: 70%;">
+                <img src="skills.png" alt="" id="skillimg">
+                <!--<table style="width: 70%;">
                     <tr>
                         <td>
-                            <img src="html-1.svg" alt="" style="width: 45%;">
+                            <img src="html-1.svg" alt="" style="width: 50%;">
                             <figcaption>HTML</figcaption>
                         </td>
                         <td>
-                            <img src="css-3.svg" alt="" style="width: 45%;">
+                            <img src="css-3.svg" alt="" style="width: 50%;">
                             <figcaption>CSS</figcaption>
                         </td>
                         <td>
-                            <img src="javascript-1.svg" alt="" style="width: 33%;">
+                            <img src="javascript-1.svg" alt="" style="width: 50%;">
                             <figcaption>JavaScript</figcaption>
                         </td>
                         <td>
@@ -208,7 +235,7 @@
                             <figcaption>Canva</figcaption>
                         </td>
                     </tr>
-                </table>
+                </table>-->
             </div>
             <!--<div class="column">
                         <img src="html.png" alt="" style="width: 5%;">
@@ -246,23 +273,25 @@
 
                 <div class="pryshth">
                     <!--<i class="material-icons" ; id="stars">stars</i>-->
-                    <p style="color: #003f5e;">Media Design Expert</p>
+                    <p id="pointer" style="color: #003f5e;">Media Design Expert</p>
                     <p style="font-size: 18px;">Pryshth A Paper Plane Foundation - Internship <br> (July 2023 - Present)
                     </p>
 
-                    <p style="font-size: 17px; margin-top: 18px;">Writing compelling blog posts, research social issues
-                        and create content, and promoting the NGO. </p>
+                    <p style="font-size: 17px; margin-top: 18px;">Improving the website, researching and planning
+                        creatives,
+                        analyzing and increasing the website traffic. The work space included Wix, Google Analytics and
+                        Google clone. </p>
 
                     <a href="https://drive.google.com/file/d/1_LUQNLpMnxS1hN-c15or_6jEOJYltFU6/view?usp=drivesdk">
                         <button class="btn1">
-                            See Credential <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
+                            See Credentials <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
                         </button>
                     </a>
                 </div>
 
                 <div class="marpu">
                     <!--<i class="material-icons" ; id="stars">stars</i>-->
-                    <p style="color: #003f5e;">Content Writer</p>
+                    <p id="pointer" style="color: #003f5e;">Content Writer</p>
                     <p style="font-size: 18px;">Marpu Foundation - Internship <br> (June 2023 - July 2023)</p>
 
                     <p style="font-size: 17px; margin-top: 18px;">Writing compelling blog posts, research social issues
@@ -270,14 +299,14 @@
 
                     <a href="https://drive.google.com/file/d/1_LUQNLpMnxS1hN-c15or_6jEOJYltFU6/view?usp=drivesdk">
                         <button class="btn1">
-                            See Credential <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
+                            See Credentials <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
                         </button>
                     </a>
                 </div>
 
                 <div class="cgpc">
                     <!--<i class="material-icons" ; id="stars">stars</i>-->
-                    <p style="color: #003f5e;">Member - Technical and Internships Vertical</p>
+                    <p id="pointer" style="color: #003f5e;">Member - Technical and Internships Vertical</p>
                     <p style="font-size: 18px;">J.E.E.T. - The Career Guidance and Placement Cell, IPCW <br> (February
                         2022 - June 2023)</p>
 
@@ -288,14 +317,14 @@
                         sites.</p>
 
                     <button class="btn1">
-                        See Credential <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
+                        See Credentials <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
                     </button>
                 </div>
 
                 <div class="noor">
                     <!--<i class="material-icons" ; id="stars">stars</i>-->
                     <!--<i class="fa-solid fa-person-circle-check fa-sm" style="color: #000000;"></i>-->
-                    <p style="color: #003f5e;">Member - Creative Team</p>
+                    <p id="pointer" style="color: rgb(0, 136, 122);">Member - Creative Team</p>
                     <p style="font-size: 18px;">Project N.O.O.R - Community Outreach Program, IPCW <br> (January 2022 -
                         January 2023)</p>
 
@@ -304,7 +333,7 @@
                         The work space included Canva.</p>
 
                     <button class="btn1">
-                        See Credential <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
+                        See Credentials <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
                     </button>
                 </div>
                 <!--<div class="marpu">
@@ -418,6 +447,7 @@
                 <p class="contentfooter">Portfolio - Aditi Upadhyay</p>
                 <P>More content to be added soon!</P>
                 <P>@2023</P>
+                <p>&copy;Aditi Upadhyay</p>
                 <!--<p>Go back to the top?</p>-->
             </div>
             <div class="footer-second"></div>
