@@ -15,7 +15,7 @@
 
     <script src="https://kit.fontawesome.com/98fc543cb7.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
+   <!-- <script>
         let color=document.getElementById('mag');
         color.addEventListener('input', function(e)
         {
@@ -27,7 +27,7 @@
             document.getElementById("myForm").reset();*/
         }
     </script>
-    <!--<script>
+    <script>
         function mess() {
             alert("Your message has been sent!!");
         }
@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body id="body">
     <button onclick="topFunction()" id="myBtn" title="Go back to top">
         <!--<i class="fa-solid fa-arrow-up"></i>--><i class="fa-solid fa-angles-up"></i>
     </button>
@@ -80,13 +80,12 @@
     <main>
         <div id="aboutinfo" style="height: 60px;"></div>
         <section class="firstsection1">
-            <div class="magic2" align="center">
-                <form action="portfolio.php">
+            <div align="center">
+                <form action="" id="myyForm">
                     <label for="">Want to do something interesting? Choose a color!</label>
                     <br>
                     <input type="color" value="#BE5CFF" id="mag">
-                    <button type="submit">Go!!</button>
-                    <!--<input type="submit">Go !!-->
+                    <input type="submit" value="Go!!">
                 </form>
             </div>
             <!--<div class="magic" style="text-align: center;">
@@ -114,7 +113,7 @@
 
                 </div>
                 <div class="rightsection">
-                    <img src="img.png" alt="">
+                    <!--<img src="img.png" alt="">-->
                 </div>
             </div>
         </section>
@@ -199,65 +198,8 @@
         <section class="skills">
             <div class="heading">Skills</div>
             <div class="skillset" align="center">
-                <img src="skills.png" alt="" id="skillimg">
-                <!--<table style="width: 70%;">
-                    <tr>
-                        <td>
-                            <img src="html-1.svg" alt="" style="width: 50%;">
-                            <figcaption>HTML</figcaption>
-                        </td>
-                        <td>
-                            <img src="css-3.svg" alt="" style="width: 50%;">
-                            <figcaption>CSS</figcaption>
-                        </td>
-                        <td>
-                            <img src="javascript-1.svg" alt="" style="width: 50%;">
-                            <figcaption>JavaScript</figcaption>
-                        </td>
-                        <td>
-                            <img src="c.svg" alt="" style="width: 50%;">
-                            <figcaption>C++</figcaption>
-                        </td>
-                        <td>
-                            <img src="java-14.svg" alt="" style="width: 50%;">
-                            <figcaption>Java</figcaption>
-                        </td>
-                    </tr>
-                </table>
-                <table style="width: 30%;">
-                    <tr style="text-align: center;">
-                        <td>
-                            <img src="mysql-6.svg" alt="" style="width: 50%;">
-                            <figcaption>MySQL</figcaption>
-                        </td>
-                        <td>
-                            <img src="canva-1.svg" alt="" style="width: 50%;">
-                            <figcaption>Canva</figcaption>
-                        </td>
-                    </tr>
-                </table>-->
+                <img src="skills.png" alt="" id="skillimg" >
             </div>
-            <!--<div class="column">
-                        <img src="html.png" alt="" style="width: 5%;">
-                        <figcaption>HTML</figcaption>
-                    </div>
-                    <div class="column">
-                        <img src="css.webp" alt="" style="width: 5%;">
-                        <figcaption>CSS</figcaption>
-                    </div>
-                    <div class="column">
-                        <img src="javascript.png" alt="" style="width: 6%;">
-                        <figcaption>JavaScript</figcaption>
-                    </div>
-                    <div class="column">
-                        <img src="c++.png" alt="" style="width: 5%;">
-                        <figcaption>C++</figcaption>
-                    </div>
-                    <div class="column">
-                        <img src="java.png" alt="" style="width: 5%;">
-                        <figcaption>Java</figcaption>
-                    </div>-->
-
         </section>
 
         <!--<div id="projectsinfo" style="height: 50px;"></div>
@@ -268,7 +210,6 @@
         <div id="experienceinfo" style="height: 50px;"></div>
         <div class="workexp">
             <section class="thirdsection">
-                <!--<i class="material-icons" ; id="work">work</i>-->
                 <div class="heading">Work Experience</div>
 
                 <div class="pryshth">
@@ -290,7 +231,6 @@
                 </div>
 
                 <div class="marpu">
-                    <!--<i class="material-icons" ; id="stars">stars</i>-->
                     <p id="pointer" style="color: #003f5e;">Content Writer</p>
                     <p style="font-size: 18px;">Marpu Foundation - Internship <br> (June 2023 - July 2023)</p>
 
@@ -507,39 +447,25 @@
     </script>
 
 </body>
+<script>
+    var formm=document.getElementById("myyForm")
+    formm.addEventListener('submit',function(event){
+
+        var color=document.getElementById('mag').value
+        event.preventDefault()
+        console.log(color);
+
+        if(color=='#000000')
+        {
+            alert('Why make it all dark? Try something bright and light!!')
+        }
+        else{
+            document.getElementById("body").style.backgroundColor = color;
+        }
+        
+        
+        
+    })
+</script>
 
 </html>
-<!--<script>
-        function send() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "au881466@gmail.com",
-                Password: "6446B5465E46B8625C0A8E3F618701CA7EE5",
-                To: /*'au881466@gmail.com'*/ document.getElementById("mail").value,
-                From: 'au881466@gmail.com',
-                Subject: "Portfolio Message" + document.getElementById("name").value,
-                Body: /*"Hello this is test msg"/*  */ document.getElementById("area").value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>-->
-
-<!--<tr>
-                            <td>
-                                <label for="">Name:</label>
-                                <input type="text" name="Name" id="name" placeholder="Your Name" required>
-                            </td>
-                            <td>
-                                <label for="">Email:</label>
-                                <input type="email" name="Email address" id="mail"
-                                    placeholder="Your Email Address" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="">Message:</label>
-                                <textarea name="Message" id="area" cols="55" rows="0" placeholder="Message"
-                                    required></textarea>
-                            </td>
-                        </tr>-->
