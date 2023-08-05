@@ -34,10 +34,11 @@ img {
 }
 
 body {
-    background-color: white;
+    
     font-family: 'Source Sans 3', sans-serif;
     color: black;
-    /*height: 1000px;
+    /*background-color: white;
+    height: 1000px;
     background-image: linear-gradient(purple, rgb(255, 3, 255));*/
 }
 
@@ -454,6 +455,7 @@ label {
 
 #skillimg{
     width: 60%;
+    border-radius: 4px
     /*margin-left: -1000px;*/
 }
 
