@@ -105,7 +105,7 @@ nav ul li a:hover {
 }
 
 #mag::-webkit-color-swatch{
-    border-radius: 100%;
+    border-radius: 10%;
     border: 3px solid black;
 }
 
@@ -114,13 +114,34 @@ nav ul li a:hover {
     border: 3px solid black;
 }
 
-.magic2 label{
-    
+.magic2 label{    
     /*display: inline-block;
     justify-content: center;
     text-align: center;*/
     margin-top: 20px;
     font-size: 22px;
+}
+
+#choose{    
+    /*display: inline-block;
+    justify-content: center;
+    text-align: center;*/
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+#btnsub1 {
+    border: 2px solid #00154f;
+    border-color: transparent;
+    width: 5%;  
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #00154f;
+    margin-top: 20px;
+    padding: 5px;
+    /*padding-bottom: 13px;
+    /*background-color: #55d5c961;*/
 }
 
 .firstsection {
@@ -136,17 +157,24 @@ nav ul li a:hover {
 }
 
 .leftsection {
+    /*width: 60%;*/
     font-size: 20px;
     margin: 80px;
 }
 
 .rightsection {
+    /*width: 50%;*/
+    justify-content: center;
+    display: flex;
     margin-right: 10px;
 }
 
 .rightsection img {
+    /*padding: 20px;*/
     margin: 0;
-    width: 90%;
+    width: 60%;
+    padding: 10px;
+    border-radius: 20%;
 }
 
 .green {
@@ -197,6 +225,8 @@ nav ul li a:hover {
     color: black;
     margin-top: 40px;
     margin-bottom: 20px;
+    text-shadow: 1px 2px;
+    /*font-weight: bold;*/
 }
 
 .elitext {
@@ -302,9 +332,11 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
-/*#pointer{
+#pointer{
+    /*color: #003f5e;*/
+    color: #20368f;
     font-weight: bold;
-}*/
+}
 
 .cgpc {
     font-size: 23px;
@@ -373,9 +405,9 @@ button {
 }
 
 .btn1:hover {
-    background-color: rgba(0, 136, 72, 0.801);
-    color: white;
-    /*background-color: rgb(43, 226, 186); 84a5ff*/
+    background-color: #e0fbfc;
+    /*background-color: rgb(43, 226, 186); 84a5ff
+    rgba(0, 136, 72, 0.801)*/
 }
 
 .contactboxes {
