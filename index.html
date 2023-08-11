@@ -15,7 +15,7 @@
 
     <script src="https://kit.fontawesome.com/98fc543cb7.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <!-- <script>
+    <!-- <script>
         let color=document.getElementById('mag');
         color.addEventListener('input', function(e)
         {
@@ -66,8 +66,8 @@
                         <a href="#experienceinfo">Experience</a>
                     </li>
                     <li>
-                        <a
-                            href="https://docs.google.com/document/d/1FVXjzxr_58A7n-qQRlLRnwvt2z9LBI5E2JHzkzoHNeQ/edit?usp=sharing">Resume</a>
+                        <a href="https://docs.google.com/document/d/1FVXjzxr_58A7n-qQRlLRnwvt2z9LBI5E2JHzkzoHNeQ/edit?usp=sharing"
+                            target="_blank">Resume</a>
                     </li>
                     <li>
                         <a href="#contactinfo">Contact</a>
@@ -82,10 +82,10 @@
         <section class="firstsection1">
             <div align="center">
                 <form action="" id="myyForm">
-                    <label for="">Want to do something interesting? Choose a color!</label>
+                    <label for="" id="choose">Want to do something interesting? Choose a color!</label>
                     <br>
-                    <input type="color" value="#BE5CFF" id="mag">
-                    <input type="submit" value="Go!!">
+                    <input type="color" value="#a3db21" id="mag">
+                    <input type="submit" value="Go !!" id="btnsub1">
                 </form>
             </div>
             <!--<div class="magic" style="text-align: center;">
@@ -98,12 +98,21 @@
             <div class="firstsection">
                 <!--<p style="background-image: url('bg.jpg');"></p>-->
                 <div class="leftsection">
-                    <p style="font-size: 30px;">Welcome to my Portfolio!</p>
+                    <p style="font-size: 30px;" id="change">Welcome to my Portfolio!</p>
                     <p>
                         Hi, My name is Aditi Upadhyay.
-                    <p>An aspiring student looking forward to developing my skills.</p>
+                    <p>An aspiring final year student pursuing B.Sc.(H) in Computer Science looking forward to
+                        developing my skills.
+                        I am an articulate and motivated person who can take criticism, follow timelines and adhere to
+                        strict
+                        deadlines, ensuring quality work. With the experience and knowledge I have gained through
+                        various academic and extracurricular activities,
+                        I embody the essence of a true team player and a responsible individual.
+
                     </p>
-                    <!--<div style="font-size: 25px; font-size: 30px;"> Hi, My name is <span class="green">
+                    </p>
+                    <!--Always working towards making a significant contribution to the team. 
+                        <div style="font-size: 25px; font-size: 30px;"> Hi, My name is <span class="green">
                         Aditi Upadhyay
                     </span> </div>
                 <div>and I am a</div>
@@ -113,6 +122,7 @@
 
                 </div>
                 <div class="rightsection">
+                    <img src="imgme2.png" alt="">
                     <!--<img src="img.png" alt="">-->
                 </div>
             </div>
@@ -121,7 +131,11 @@
         <div id="educationinfo" style="height: 50px;"></div>
         <section class="secondsection">
             <div class="secondbox">
-                <!--<center><img src="hat.png" alt=""></center>-->
+                <!--<center><img src="hat.png" alt=""></center>
+                
+                
+                darkcyan color was there for the heading earlier 
+                can be tried #000b4f;-->
                 <div class="heading">
                     <p>Education</p>
                 </div>
@@ -130,7 +144,7 @@
                         <div class="image">
                             <img src="dulogo.png" alt="">
                         </div>
-                        <p style="color: darkcyan;" ; class="basic">
+                        <p style="color: #20368f; font-weight: bold;" class="basic">
                             B.Sc.(Hons.) Computer Science
                         </p>
                         <p class="basic">
@@ -143,7 +157,7 @@
                         <div class="image">
                             <img src="isclogo.png" alt="">
                         </div>
-                        <p class="basic" style="color: darkcyan;" ;>
+                        <p class="basic" style="color: #20368f; font-weight: bold;">
                             ISC (Class - XII) - Science
                         </p>
                         <p class="basic">
@@ -157,7 +171,7 @@
                         <div class="image">
                             <img src="isclogo.png" alt="">
                         </div>
-                        <p class="basic" style="color: darkcyan;" ;>
+                        <p class="basic" style="color: #20368f; font-weight: bold;">
                             ICSE (Class - X)
                         </p>
                         <p class="basic">
@@ -198,7 +212,7 @@
         <section class="skills">
             <div class="heading">Skills</div>
             <div class="skillset" align="center">
-                <img src="skills.png" alt="" id="skillimg" >
+                <img src="skills.png" alt="" id="skillimg">
             </div>
         </section>
 
@@ -214,7 +228,7 @@
 
                 <div class="pryshth">
                     <!--<i class="material-icons" ; id="stars">stars</i>-->
-                    <p id="pointer" style="color: #003f5e;">Media Design Expert</p>
+                    <p id="pointer">Media Design Expert</p>
                     <p style="font-size: 18px;">Pryshth A Paper Plane Foundation - Internship <br> (July 2023 - Present)
                     </p>
 
@@ -231,7 +245,7 @@
                 </div>
 
                 <div class="marpu">
-                    <p id="pointer" style="color: #003f5e;">Content Writer</p>
+                    <p id="pointer">Content Writer</p>
                     <p style="font-size: 18px;">Marpu Foundation - Internship <br> (June 2023 - July 2023)</p>
 
                     <p style="font-size: 17px; margin-top: 18px;">Writing compelling blog posts, research social issues
@@ -246,7 +260,7 @@
 
                 <div class="cgpc">
                     <!--<i class="material-icons" ; id="stars">stars</i>-->
-                    <p id="pointer" style="color: #003f5e;">Member - Technical and Internships Vertical</p>
+                    <p id="pointer">Member - Technical and Internships Vertical</p>
                     <p style="font-size: 18px;">J.E.E.T. - The Career Guidance and Placement Cell, IPCW <br> (February
                         2022 - June 2023)</p>
 
@@ -262,9 +276,9 @@
                 </div>
 
                 <div class="noor">
-                    <!--<i class="material-icons" ; id="stars">stars</i>-->
+
                     <!--<i class="fa-solid fa-person-circle-check fa-sm" style="color: #000000;"></i>-->
-                    <p id="pointer" style="color: #003f5e;">Member - Creative Team</p>
+                    <p id="pointer">Member - Creative Team</p>
                     <p style="font-size: 18px;">Project N.O.O.R - Community Outreach Program, IPCW <br> (January 2022 -
                         January 2023)</p>
 
@@ -342,13 +356,13 @@
                             </a>
                             <a href="mailto: 2003upad.aditi@gmail.com">
                                 <div class="mailogo">
-                                    <i class="fa-regular fa-envelope fa-2x"
-                                        style="margin: 10px 15px; color: black;"></i>
+                                    <i class="fa-solid fa-envelope fa-2x" style="margin: 10px 15px; color: black;"></i>
                                 </div>
                             </a>
                             <a href="https://twitter.com/aditiupad24">
                                 <div class="twitterlogo">
-                                    <i class="fa-brands fa-twitter fa-2x" style="margin: 10px 15px; color: black;"></i>
+                                    <i class="fa-brands fa-square-x-twitter fa-2x"
+                                        style="margin: 10px 15px; color: black;"></i>
                                     <!--<i class="fa-solid fa-envelope fa-2x" style="margin: 10px 15px;"></i>-->
                                 </div>
                             </a>
@@ -405,6 +419,7 @@
         });
     </script>
 
+    <!--contact form response collection-->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyt2Dkeo7DCns9dnc-OjEZUcxoQQUKhaZ-d80cWvi8LCy_bJ15lzBnkqvb8p545imaSfg/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -424,6 +439,7 @@
         })
     </script>
 
+    <!--back to top button-->
     <script>
         // Get the button
         let mybutton = document.getElementById("myBtn");
@@ -448,23 +464,29 @@
 
 </body>
 <script>
-    var formm=document.getElementById("myyForm")
-    formm.addEventListener('submit',function(event){
+    var formm = document.getElementById("myyForm")
+    formm.addEventListener('submit', function (event) {
 
-        var color=document.getElementById('mag').value
+        let color = document.getElementById('mag').value
         event.preventDefault()
         console.log(color);
 
-        if(color=='#000000')
-        {
+        if (color == '#000000') {
             alert('Why make it all dark? Try something bright and light!!')
         }
-        else{
-            document.getElementById("body").style.backgroundColor = color;
+        else {
+            document.getElementById("change").style.color = color;
+            document.getElementById("btnsub1").style.backgroundColor = color;
+            var elements = document.getElementsByClassName("heading");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.color = color;
+                /*elements[i].style.backgroundColor = color;*/
+                elements[i].style.textShadow = "1px 2px 5px";
+            }
         }
-        
-        
-        
+
+
+
     })
 </script>
 
