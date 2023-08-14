@@ -683,9 +683,9 @@ figcaption {
 
     .leftsection {
         margin: auto;
-        text-align: center;
+        /*text-align: center;*/
         margin-left: 40px;
-        font-size: 10px;
+        font-size: 15px;
        
     }
 
