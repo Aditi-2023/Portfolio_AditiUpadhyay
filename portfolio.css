@@ -8,6 +8,12 @@ img {
     height: auto;
 }
 
+#bgg{
+    margin-top: -6px; 
+    width: 100%; 
+    height: 90%;
+}
+
 #myVideo {
     max-width: 100%;
     min-height: 100%;
@@ -614,6 +620,12 @@ figcaption {
 
 
 @media screen and (max-width: 850px) {
+
+    #bgg{
+        margin-top: -10px; 
+        width: 100%; 
+        height: 90%;
+    }
 
     #skillimg{
         width: 90%;
